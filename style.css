@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&family=Poppins:wght@300&display=swap');
+
+* {
+  font-family: 'Mulish', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.company-image {
+  animation: company-move 20s linear infinite;
+
+  @keyframes company-move {
+    0% {
+      top: 0;
+    }
+
+    50% {
+      top: -50%;
+    }
+
+    100% {
+      top: 0;
+    }
+  }
+}
+
+.ctaSection {
+  background-size: 100% 100%;
+
+}
+
+.coreSection {
+  background-size: 100% 100%;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+
+
