@@ -20,12 +20,12 @@
 <body class="box-border overflow-x-hidden font-mulish scroll-smooth">
   <!-- nav bar -->
   <nav class="bg-deepBlue">
-    <div class="flex w-10/12 m-w-[1080px] relative mx-auto items-center justify-evenly">
+    <div class="flex w-10/12 m-w-[1080px] relative mx-auto items-center justify-between">
       <a href="/" class="cursor-pointer py-7 pr-7">
         <img class="w-[125px] h-[30px]" src="images/logo.svg" />
       </a>
 
-      <ul class="flex gap-6">
+      <ul class=" gap-6 hidden lg:flex">
         <li
           class="relative text-white py-7 font-mullish hover:text-lightblue cursor-pointer transition-all duration-200 group">
           <a href="#">Payments</a>
@@ -66,13 +66,13 @@
         </li>
       </ul>
 
-      <img src="images/pngwing.com.png" class="w-10 cursor-pointer m-2 " />
+      <img src="images/pngwing.com.png" class="w-10 cursor-pointer m-2 hidden " />
       <button class="text-white font-semibold text-sm border-lightblue border-[1px] px-5 py-3 cursor-pointer">
         Log In
       </button>
-      >
+      
       <div>
-        <button class="bg-white text-sm text-lightblue px-5 py-3 ml-3 font-semibold flex items-center">
+        <button class="bg-white text-sm text-lightblue px-5 py-3 ml-3 font-semibold  items-center hidden hover:text-lightBlue500 transition-all duration-200 lg:flex">
           Sign Up
           <svg viewBox="0 0 24 24" focusable="false" class="w-[14px] h-[14px] ml-3">
             <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
@@ -84,7 +84,7 @@
 
   <!-- hero Section -->
   <section class="relative bg-deepBlue">
-    <div class="flex w-10/12 m-w-5xl mx-auto justify-between items-center text-white gap-10">
+    <div class="flex  flex-col  lg:flex-row w-10/12 m-w-5xl mx-auto justify-between items-center text-white gap-10">
       <!-- left part -->
       <div class="space-y-6 w-7/12">
         <h1 class="font-mullish text-4xl font-bold leading-tight">
@@ -118,11 +118,14 @@
     <img src="images/feature-section1-dottedrows.png" class="w-[233px] h-[167] absolute top-12 right-0 rotate-180"
       loading="lazy" />
 
-    <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+    <div class="relative w-10/12 max-w-[1080px] mx-auto pt-4">
       <!-- heading -->
       <div>
-        <h2 class="text-center font-extrabold text-2xl leading-[1.2]">
+        <h2 class="text-center font-extrabold text-2xl leading-[1.2] hidden md:block">
           Accept Payments with Razorpay Payment Suite
+        </h2>
+        <h2 class="text-center font-extrabold text-5xl leading-[1.2] md:hidden">
+          Explore Razorpay Payment Suite
         </h2>
         <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
       </div>
@@ -160,9 +163,9 @@
             </li>
           </ul>
 
-          <div class="flex flex-row items-center space-x-4">
+          <div class="flex flex-col-reverse  space-x-4 md:flex-row md:items-center">
             <button
-              class="flex  items-center bg-lightblue text-sm text-white font-semibold rounded-md px-4 py-3 hover:bg-lightBlue500 transition-all duration-200">
+              class="flex  items-center justify-center bg-lightblue text-sm text-white font-semibold rounded-md px-4 py-3 hover:bg-lightBlue500 transition-all duration-200">
               Sign Up Now
               <svg viewBox="0 0 24 24" focusable="false" class="w-[14px] h-[14px] ml-3">
                 <path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
@@ -172,18 +175,20 @@
               <a href="#" class="text-blue-700 font-bold group-hover:text-grayBlue transition-all duration-200">Know
                 More </a>
               <span
-                class="material-symbols-outlined w-5 h-5 text-blue-700 group-hover:text-grayBlue transition-all duration-200">chevron_right</span>
-            </div>
-
-            <!-- right section -->
-            <div>
-              <img src="images/payment-suite.png" class="absolute max-w-[600px] right-0 bottom-0" />
+                class="material-symbols-outlined w-5 h-5 text-blue-700 group-hover:text-grayBlue transition-all duration-200">
+                chevron_right</span>
             </div>
           </div>
+             
+        </div>
+         <!-- right section -->
+         <div>
+          <img 
+          src="images/payment-suite.png" class="absolute right-0 bottom-0 hidden lg:block md:block lg:max-w-[600px] md:max-w-[400px]"/>
         </div>
       </div>
       <!-- card section -->
-      <div class="grid grid-cols-3 w-full  gap-4 mt-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full  gap-4 mt-16">
         <!-- box 1 -->
         <div class="w-full min-h-[15rem] relative cursor-pointer  hover:scale-105 transition-all duration-200  ">
 
@@ -489,7 +494,7 @@
           </div>
           <!-- right section -->
           <div>
-            <img src="images/buisness-banking.png" class="absolute max-w-[600px] right-0 bottom-0" loading="lazy" />
+            <img src="images/buisness-banking.png" class="absolute hidden md:block lg:block md:max-w-[400px] lg:max-w-[600px] right-0 bottom-0" loading="lazy" />
           </div>
         </div>
 
